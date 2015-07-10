@@ -1,0 +1,12 @@
+build-essential
+ipython
+python-tk
+python-scipy
+python-matplotlib
+vim
+git
+cmake
+python-setuptools
+tmux
+xclip
+python-dev
