@@ -57,11 +57,14 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 
+" Set 80 character remind
+set colorcolumn=81
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " The bundles you install will be listed here
@@ -85,14 +88,8 @@ set number
 
 " YouCompleteMe autocompletion
 Bundle 'Valloric/YouCompleteMe'
-nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_error_symbol = '>>'
-let g:ycm_warning_symbol = '>*'
-let g:ycm_confirm_extra_conf=0
 
-"More things 
+"More things
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'Lokaltog/vim-powerline'
@@ -100,4 +97,5 @@ Bundle 'Lokaltog/vim-powerline'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 set t_Co=256
+
 
