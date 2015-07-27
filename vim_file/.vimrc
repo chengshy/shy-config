@@ -1,3 +1,8 @@
+set so=7
+
+" enables a paste mode in which autoindent is turned off
+set pastetoggle=<F2>
+
 set nocompatible
 filetype off
 " 使回格键（backspace）正常处理indent, eol, start等
@@ -18,14 +23,18 @@ set cursorline              " 突出显示当前行
 set hlsearch
 set incsearch
 " 自动缩进
-set autoindent
-set cindent
+set ai
+set si
+set smarttab
 " Tab键的宽度
 set tabstop=4
 " 统一缩进为4
-set softtabstop=4
 set shiftwidth=4
 set expandtab
+
+set nobackup
+set noswapfile
+
 syntax on
 syntax enable
 colorscheme monokai
@@ -57,8 +66,11 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 
-" Set 80 character remind
-set colorcolumn=81
+" Set 120 character remind
+" set colorcolumn=121
+
+" Highlight over 80 characters
+let &colorcolumn="80,".join(range(120,999),",")
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -97,5 +109,4 @@ Bundle 'Lokaltog/vim-powerline'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 set t_Co=256
-
 
