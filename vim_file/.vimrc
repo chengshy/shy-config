@@ -1,5 +1,8 @@
 set so=7
 
+" Set 120 character remind
+let &colorcolumn="80,".join(range(120,999),",")
+
 " enables a paste mode in which autoindent is turned off
 set pastetoggle=<F2>
 
@@ -41,8 +44,8 @@ colorscheme monokai
 let g:pymode_rope = 0
 
 " Documentation
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'K'
+"let g:pymode_doc = 1
+"let g:pymode_doc_key = 'K'
 
 "Linting
 let g:pymode_lint = 1
@@ -63,14 +66,11 @@ let g:pymode_syntax_all = 1
 let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
+let g:pymode_options_max_line_length = 120
 " Don't autofold code
 let g:pymode_folding = 0
 
-" Set 120 character remind
-" set colorcolumn=121
-
-" Highlight over 80 characters
-let &colorcolumn="80,".join(range(120,999),",")
+autocmd FileType xml,yaml set shiftwidth=2 | set expandtab
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -109,4 +109,3 @@ Bundle 'Lokaltog/vim-powerline'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 set t_Co=256
-
