@@ -3,7 +3,7 @@ ipython
 python-tk
 python-scipy
 python-matplotlib
-vim
+vim-gnome
 git
 cmake
 python-setuptools
