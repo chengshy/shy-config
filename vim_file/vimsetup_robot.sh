@@ -19,10 +19,6 @@ cd ..
 rm -rf powerlinefont
 
 
-# build YCM
-cd ~/.vim/bundle
-rm -rf YouCompleteMe && git clone --recursive https://github.com/Valloric/YouCompleteMe.git && cd YouCompleteMe && ./install.sh --clang-completer && cd -
-
 # Install bundles
 vim +PluginInstall +qall
 exit 0

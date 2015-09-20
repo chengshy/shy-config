@@ -8,3 +8,6 @@ install: all
 
 xmode:
 	sudo xmode bash/.Xmodmap
+
+clang:
+	sudo sh ./clang.sh
