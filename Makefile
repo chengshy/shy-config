@@ -7,7 +7,7 @@ install: all
 	python setup.py
 
 xmode:
-	sudo xmode bash/.Xmodmap
+	sudo xmodmap bash/.Xmodmap
 
 clang:
 	sudo sh ./clang.sh
