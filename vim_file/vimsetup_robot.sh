@@ -9,7 +9,7 @@ cp colors ~/.vim/ -u -r
 
 # Added the lines to vimrc to support python integration
 rm ~/.vimrc
-cp .vimrc ~
+cp .vimrc_robot ~/.vimrc
 
 # Install Powerline font
 git clone https://github.com/powerline/fonts.git powerlinefont/
