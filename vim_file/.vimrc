@@ -7,7 +7,9 @@ let &colorcolumn="80,".join(range(120,999),",")
 set pastetoggle=<F2>
 
 set nocompatible
-filetype off
+" filetype off
+filetype on
+filetype plugin on
 " 使回格键（backspace）正常处理indent, eol, start等
 set backspace=2
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
@@ -38,8 +40,8 @@ set expandtab
 set nobackup
 set noswapfile
 
-syntax on
 syntax enable
+syntax on
 colorscheme monokai
 let g:pymode_rope = 0
 
@@ -112,6 +114,9 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 let g:ycm_min_num_of_chars_for_completion=2
 let g:ycm_cache_omnifunc=1  "禁止缓存匹配项
 let g:ycm_seed_identifiers_with_syntax=1
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "More things
 Bundle 'L9'
@@ -121,3 +126,4 @@ Bundle 'Lokaltog/vim-powerline'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 set t_Co=256
+
