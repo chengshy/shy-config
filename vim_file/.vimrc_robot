@@ -1,7 +1,7 @@
 set so=7
 
 " Set 120 character remind
-let &colorcolumn="80,".join(range(120,999),",")
+let &colorcolumn="80,120"
 
 " enables a paste mode in which autoindent is turned off
 set pastetoggle=<F2>

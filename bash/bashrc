@@ -51,3 +51,5 @@ source ${BASH_LOCAL_DIR}/ws.sh
 source ${BASH_LOCAL_DIR}/robots.sh
 
 source /opt/ros/indigo/setup.bash
+
+xmodmap ~/config/bash/.Xmodmap
