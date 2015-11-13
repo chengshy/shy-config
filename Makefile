@@ -6,8 +6,9 @@ apt_packages:
 install: all
 	python setup.py
 
-xmode:
-	sudo xmodmap bash/.Xmodmap
+cpas_to_esc:
+	sudo cp ./bash/pc /usr/share/X11/xkb/symbols/pc
+	sudo rm -rf /var/lib/xkb/*.xkm
 
 clang:
 	sudo sh ./clang.sh
