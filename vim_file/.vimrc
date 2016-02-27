@@ -49,8 +49,8 @@ autocmd CompleteDone * pclose "关闭prv
 " Enable ine numbers
 set number
 
-autocmd FileType xml,yaml, world set shiftwidth=2 | set expandtab
-au BufNewFile,BufRead *.launch set filetype=xml
+autocmd FileType xml,yaml set shiftwidth=2 | set expandtab
+au BufNewFile,BufRead *.launch,*.world set filetype=xml
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -85,6 +85,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'FuzzyFinder'
 
 Bundle 'L9'
+
+"Bundle 'davidhalter/jedi-vim'
 
 Bundle 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols = 'fancy'
