@@ -86,8 +86,6 @@ Bundle 'FuzzyFinder'
 
 Bundle 'L9'
 
-Bundle 'davidhalter/jedi-vim'
-
 Bundle 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols = 'fancy'
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
