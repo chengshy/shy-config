@@ -50,4 +50,12 @@ source ${BASH_LOCAL_DIR}/ws.sh
 # robot specific stuff
 source ${BASH_LOCAL_DIR}/robots.sh
 
-source /opt/ros/indigo/setup.bash
+# source /opt/ros/indigo/setup.bash
+
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+

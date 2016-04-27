@@ -1,7 +1,7 @@
 all: apt_packages
 
 apt_packages:
-	sudo apt-get install `cat apt/packages`
+	brew install `cat apt/packages`
 
 install: all
 	python setup.py

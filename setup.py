@@ -42,7 +42,7 @@ if __name__ == '__main__':
     link_in_home('tmux/tmux.conf', '.tmux.conf')
 
     # have bash call my stuff on startup
-    bashrc_filename = os.path.join(home_dir, '.bashrc')
+    bashrc_filename = os.path.join(home_dir, '.bash_profile')
     text = 'source %s' % os.path.join(home_dir, 'config/bash/bashrc')
     insert_text_in_file(bashrc_filename, text, '#')
 

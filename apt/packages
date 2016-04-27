@@ -1,12 +1,5 @@
-build-essential
-ipython
-python-tk
-python-scipy
-python-matplotlib
-vim-gnome
 git
 cmake
-python-setuptools
 tmux
-xclip
-python-dev
+bash-completion
+
