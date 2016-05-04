@@ -6,7 +6,7 @@ apt_packages:
 install: all
 	python setup.py
 
-cpas_to_esc:
+caps_to_esc:
 	sudo cp ./bash/pc /usr/share/X11/xkb/symbols/pc
 	sudo rm -rf /var/lib/xkb/*.xkm
 

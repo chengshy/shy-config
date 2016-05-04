@@ -50,4 +50,4 @@ source ${BASH_LOCAL_DIR}/ws.sh
 # robot specific stuff
 source ${BASH_LOCAL_DIR}/robots.sh
 
-source /opt/ros/indigo/setup.bash
+source /opt/ros/kinetic/setup.bash
