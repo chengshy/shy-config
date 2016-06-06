@@ -50,11 +50,16 @@ autocmd CompleteDone * pclose "关闭prv
 set number
 
 autocmd FileType xml,yaml set shiftwidth=2 | set expandtab
-au BufNewFile,BufRead *.launch,*.world set filetype=xml
+au BufNewFile,BufRead *.launch,*.world,*.urdf,*.srdf,*.xacro set filetype=xml
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Folding settings
+set foldmethod=marker 
+set foldmarker={,}
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
